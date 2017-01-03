@@ -1,0 +1,13 @@
+{
+  "name": "mon-app",
+  "version": "0.1.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-session": "^1.2.0",
+    "express": "~3.3.6",
+    "morgan": "^1.7.0",
+    "multer": "^1.2.1",
+    "serve-favicon": "^2.3.2",
+    "socket.io": "^1.7.2"
+  }
+}

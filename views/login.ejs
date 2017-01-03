@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Titre de la page</title>
+<!-- 	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script> -->
+</head>
+<body>
+<form id="formu" action="/" method="post">
+		<label for="nickname">Your nickname</label><input type="text" name="nickname">
+		<label for="room">Join room</label><input type="text" name="room">
+		<label for="password">Password</label><input type="password" name="password">
+		<input type="submit" id="valid">
+	</form>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io.connect('http://localhost:8090');
+        //     socket.emit('pseudo', pseudo); 
+        // socket.on('message', function(message) {
+        //     $("#chat").append('<p>' + message + '</p>');
+        // });
+        // $('#formu').on('submit', function(){
+        //     socket.emit('connection', {nickname : $('[name=nickname]').val(), room : $('[name=room]').val(), password : $('[name=password]').val()});
+        //     return false;
+        // })
+    </script>
+</body>
