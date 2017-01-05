@@ -7,5 +7,18 @@
 	<script src="script.js"></script>
 </head>
 <body>
-caca
+<button id="launch-dice">Lancer des</button>
+Diceroom
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+		var socket = io.connect('http://localhost:8090');
+        //     socket.emit('pseudo', pseudo);
+        socket.on('test', function(message) {
+        	console.log(message);
+        });
+        $('#launch-dice').click(function(){
+	socket.emit('launch', 'caca');        	
+        })
+    </script>
 </body>
